@@ -13,4 +13,8 @@ export class UserserviceService{
     return this.http.get("https://reqres.in/api/users").toPromise();
   }
   
+  addUser(user)
+  {
+    return this.http.post("https://reqres.in/api/users",user).toPromise();
+  }
 }
